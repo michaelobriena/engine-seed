@@ -7,15 +7,16 @@ var randomColor = require('./randomColor');
 FamousEngine.init();
 
 var sequential = new Sequential({
-    itemSpacing: 0,
+    // itemSize: 400,
     direction: 1
 });
 
 FamousEngine.createScene().addChild(sequential);
 
+var nodes = [];
 for (var i = 0; i < 4; i++) {
     var node = sequential.addChild();
-
+    nodes.push(node);
     if (i%2) {
         node.setSizeMode(1, 1, 0);
         node.setAbsoluteSize(80, 80)
@@ -32,3 +33,4 @@ for (var i = 0; i < 4; i++) {
 }
 
 sequential.addChild();
+window.s = sequential;

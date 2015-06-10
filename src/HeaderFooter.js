@@ -12,7 +12,7 @@ var hf = new HeaderFooter({
 FamousEngine.createScene().addChild(hf);
 
 new DOMElement(hf.getHeader(), {
-    content: 'HEADER',
+    content: '0',
     properties: {
         backgroundColor: 'yellow'
     }

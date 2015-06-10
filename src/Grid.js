@@ -14,10 +14,8 @@ var grid = new Grid({
 
 FamousEngine.createScene().addChild(grid);
 
-var children = grid.getChildren();
-console.log(children)
-for (var i = 0; i < children.length; i++) {
-    new DOMElement(children[i], {
+for (var i = 0; i < 3; i++) {
+    new DOMElement(grid.addChild(), {
         content: i,
         properties: {
             backgroundColor: randomColor()

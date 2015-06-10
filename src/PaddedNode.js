@@ -7,10 +7,10 @@ var randomColor = require('./randomColor');
 FamousEngine.init();
 
 var paddedNode = new PaddedNode({
-    top: 100,
-    right: 400,
-    left: 90,
-    bottom: 20
+    topPadding: 100,
+    rightPadding: 50,
+    leftPadding: 90,
+    bottomPadding: 20
 });
 
 FamousEngine.createScene().addChild(paddedNode);
@@ -18,9 +18,8 @@ FamousEngine.createScene().addChild(paddedNode);
 var child = paddedNode.addChild();
 
 new DOMElement(child, {
-    content: 'aljkdshflkj',
+    content: 0,
     properties: {
         backgroundColor: randomColor()
     }
 });
-
